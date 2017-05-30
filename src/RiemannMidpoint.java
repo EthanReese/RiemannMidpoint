@@ -12,9 +12,18 @@ public class RiemannMidpoint {
 
     public RiemannMidpoint(){
 
+        double offset = (HBOUND - LBOUND)/(2*N);
+        double increment = (HBOUND-LBOUND) / N;
+
+        double totalIntegral = 0;
+        for (int i = 0; i < N; i++) {
+            totalIntegral += plugIn((LBOUND + offset) +(increment*i)) * increment;
+        }
+        System.out.println(totalIntegral);
+
     }
 
-    public double plugIn(int xVal){
+    public double plugIn(double xVal){
 
 
         //Change the equation here to meet needs
