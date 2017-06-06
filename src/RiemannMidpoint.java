@@ -66,7 +66,7 @@ public class RiemannMidpoint {
     public double surfaceAreaOfRevolutionPlug(double xVal){
 
         //Change the equation here to meet needs
-        return 2*Math.PI*Math.sqrt(Math.sin(xVal)+Math.cos(xVal))*Math.sqrt(1+Math.pow((Math.cos(xVal)-Math.sin(xVal))/(2*Math.sqrt(Math.sin(xVal)+Math.cos(xVal))),2));
+        return 2*Math.PI*xVal*Math.sqrt(1+Math.pow((Math.cos(xVal)-Math.sin(xVal))/(2*Math.sqrt(Math.sin(xVal)+Math.cos(xVal))),2));
     }
 
     public static void main(String[] args){
