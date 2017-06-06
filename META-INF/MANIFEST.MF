@@ -1,0 +1,4 @@
+Manifest-Version: 1.0
+Class-Path: /Users/Ethan/Code/RiemannMidpoint/src/RiemannMidpoint.java
+Main-Class: RiemannMidpoint
+
